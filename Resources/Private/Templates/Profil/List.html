@@ -1,0 +1,52 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	This Template is responsible for creating a table of domain objects.
+
+	If you modify this template, do not forget to change the overwrite settings
+	in /Configuration/ExtensionBuilder/settings.yaml:
+	  Resources:
+		Private:
+		  Templates:
+			List.html: keep
+
+	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+	<f:section name="content">
+		<h1>Listing for Profil</h1>
+
+		<f:flashMessages />
+
+		<table  class="tx_portfolioyjslt" >
+			<tr>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_profil.last_name" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_profil.first_name" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_profil.birth_date" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_profil.driving_licence" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_profil.tel" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_profil.mail" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_profil.address" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_profil.photo" /></th>
+				<th> </th>
+				<th> </th>
+			</tr>
+
+			<f:for each="{profils}" as="profil">
+				<tr>
+					<td><f:link.action action="show" arguments="{profil : profil}"> {profil.lastName}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{profil : profil}"> {profil.firstName}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{profil : profil}"> {profil.birthDate -> f:format.date()}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{profil : profil}"> {profil.drivingLicence}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{profil : profil}"> {profil.tel}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{profil : profil}"> {profil.mail}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{profil : profil}"> {profil.address}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{profil : profil}"> {profil.photo.originalResource.name}</f:link.action></td>
+					<td><f:link.action action="edit" arguments="{profil : profil}">Edit</f:link.action></td>
+					<td><f:link.action action="delete" arguments="{profil : profil}">Delete</f:link.action></td>
+				</tr>
+			</f:for>
+		</table>
+
+		<f:link.action action="new">New Profil</f:link.action>
+	</f:section>
+</html>

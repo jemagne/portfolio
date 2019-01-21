@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-15T10:28:04Z" product-name="portfolio_yjslt">
+		<header/>
+		<body>
+			<trans-unit id="tile.description">
+				<source>titre</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="categories.description">
+				<source>catégories</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

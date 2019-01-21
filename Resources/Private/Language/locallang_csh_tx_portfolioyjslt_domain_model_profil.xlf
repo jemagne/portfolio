@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-15T10:28:04Z" product-name="portfolio_yjslt">
+		<header/>
+		<body>
+			<trans-unit id="last_name.description">
+				<source>lastName</source>
+			</trans-unit>
+			<trans-unit id="first_name.description">
+				<source>firstName</source>
+			</trans-unit>
+			<trans-unit id="birth_date.description">
+				<source>birthDate</source>
+			</trans-unit>
+			<trans-unit id="driving_licence.description">
+				<source>Moyen de transport individuel</source>
+			</trans-unit>
+			<trans-unit id="tel.description">
+				<source>Téléphone</source>
+			</trans-unit>
+			<trans-unit id="mail.description">
+				<source>Courriel</source>
+			</trans-unit>
+			<trans-unit id="address.description">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="photo.description">
+				<source>Photo</source>
+			</trans-unit>
+			<trans-unit id="projects.description">
+				<source>projets</source>
+			</trans-unit>
+			<trans-unit id="jobs.description">
+				<source>emplois</source>
+			</trans-unit>
+			<trans-unit id="social.description">
+				<source>Réseaux social</source>
+			</trans-unit>
+			<trans-unit id="educations.description">
+				<source>Formations</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

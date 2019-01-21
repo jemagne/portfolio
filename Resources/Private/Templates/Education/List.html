@@ -1,0 +1,50 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	This Template is responsible for creating a table of domain objects.
+
+	If you modify this template, do not forget to change the overwrite settings
+	in /Configuration/ExtensionBuilder/settings.yaml:
+	  Resources:
+		Private:
+		  Templates:
+			List.html: keep
+
+	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+	<f:section name="content">
+		<h1>Listing for Education</h1>
+
+		<f:flashMessages />
+
+		<table  class="tx_portfolioyjslt" >
+			<tr>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_education.domaine" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_education.date_start" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_education.date_end" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_education.degree" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_education.place" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_education.title" /></th>
+				<th><f:translate key="tx_portfolioyjslt_domain_model_education.description" /></th>
+				<th> </th>
+				<th> </th>
+			</tr>
+
+			<f:for each="{educations}" as="education">
+				<tr>
+					<td><f:link.action action="show" arguments="{education : education}"> {education.domaine}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{education : education}"> {education.dateStart -> f:format.date()}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{education : education}"> {education.dateEnd -> f:format.date()}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{education : education}"> {education.degree}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{education : education}"> {education.place}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{education : education}"> {education.title}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{education : education}"> {education.description}</f:link.action></td>
+					<td><f:link.action action="edit" arguments="{education : education}">Edit</f:link.action></td>
+					<td><f:link.action action="delete" arguments="{education : education}">Delete</f:link.action></td>
+				</tr>
+			</f:for>
+		</table>
+
+		<f:link.action action="new">New Education</f:link.action>
+	</f:section>
+</html>

@@ -1,0 +1,44 @@
+{
+    "name": "yjslt/portfolio-yjslt",
+    "type": "typo3-cms-extension",
+    "description": "portfolio",
+    "authors": [
+        {
+            "name": "Yoann Chevessier",
+            "role": "Developer"
+        },
+        {
+            "name": "Tom Quemener",
+            "role": "Developer"
+        },
+        {
+            "name": "L\u00e9o-Paul Dubourg",
+            "role": "Developer"
+        },
+        {
+            "name": "Sebastien Leduc",
+            "role": "Developer"
+        },
+        {
+            "name": "Jean Magn\u00e9",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "YJSLT\\PortfolioYjslt\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YJSLT\\PortfolioYjslt\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "portfolio_yjslt": "self.version",
+        "typo3-ter/portfolio-yjslt": "self.version"
+    }
+}

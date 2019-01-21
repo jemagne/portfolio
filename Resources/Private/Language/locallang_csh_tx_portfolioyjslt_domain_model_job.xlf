@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-15T10:28:04Z" product-name="portfolio_yjslt">
+		<header/>
+		<body>
+			<trans-unit id="position.description">
+				<source>Poste</source>
+			</trans-unit>
+			<trans-unit id="company_name.description">
+				<source>Nom de l&#039;entreprise</source>
+			</trans-unit>
+			<trans-unit id="position_card.description">
+				<source>Fiche de poste</source>
+			</trans-unit>
+			<trans-unit id="date_hiring.description">
+				<source>Date d&#039;embauche</source>
+			</trans-unit>
+			<trans-unit id="date_end.description">
+				<source>Date de fon</source>
+			</trans-unit>
+			<trans-unit id="contract.description">
+				<source>Contrat</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>Localisation</source>
+			</trans-unit>
+			<trans-unit id="skills.description">
+				<source>Compétences</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
