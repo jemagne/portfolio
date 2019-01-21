@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil',
+        'title' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile',
         'label' => 'last_name',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -18,7 +18,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'last_name,first_name,birth_date,driving_licence,tel,mail,address,photo,projects,jobs,social,educations',
-        'iconfile' => 'EXT:portfolio_yjslt/Resources/Public/Icons/tx_portfolioyjslt_domain_model_profil.gif'
+        'iconfile' => 'EXT:portfolio_yjslt/Resources/Public/Icons/tx_portfolioyjslt_domain_model_profile.gif'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, last_name, first_name, birth_date, driving_licence, tel, mail, address, photo, projects, jobs, social, educations',
@@ -55,8 +55,8 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_portfolioyjslt_domain_model_profil',
-                'foreign_table_where' => 'AND tx_portfolioyjslt_domain_model_profil.pid=###CURRENT_PID### AND tx_portfolioyjslt_domain_model_profil.sys_language_uid IN (-1,0)',
+                'foreign_table' => 'tx_portfolioyjslt_domain_model_profile',
+                'foreign_table_where' => 'AND tx_portfolioyjslt_domain_model_profile.pid=###CURRENT_PID### AND tx_portfolioyjslt_domain_model_profile.sys_language_uid IN (-1,0)',
             ],
         ],
         'l10n_diffsource' => [
@@ -118,7 +118,7 @@ return [
 
         'last_name' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.last_name',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.last_name',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -127,7 +127,7 @@ return [
         ],
         'first_name' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.first_name',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.first_name',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -136,7 +136,7 @@ return [
         ],
         'birth_date' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.birth_date',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.birth_date',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
@@ -147,7 +147,7 @@ return [
         ],
         'driving_licence' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.driving_licence',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.driving_licence',
             'config' => [
                 'type' => 'check',
                 'items' => [
@@ -161,7 +161,7 @@ return [
         ],
         'tel' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.tel',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.tel',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -170,7 +170,7 @@ return [
         ],
         'mail' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.mail',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.mail',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -179,7 +179,7 @@ return [
         ],
         'address' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.address',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.address',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -188,7 +188,7 @@ return [
         ],
         'photo' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.photo',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.photo',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
                 'photo',
                 [
@@ -234,11 +234,11 @@ return [
         ],
         'projects' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.projects',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.projects',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_portfolioyjslt_domain_model_project',
-                'foreign_field' => 'profil',
+                'foreign_field' => 'profile',
                 'maxitems' => 9999,
                 'appearance' => [
                     'collapseAll' => 0,
@@ -252,11 +252,11 @@ return [
         ],
         'jobs' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.jobs',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.jobs',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_portfolioyjslt_domain_model_job',
-                'foreign_field' => 'profil',
+                'foreign_field' => 'profile',
                 'maxitems' => 9999,
                 'appearance' => [
                     'collapseAll' => 0,
@@ -270,11 +270,11 @@ return [
         ],
         'social' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.social',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.social',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_portfolioyjslt_domain_model_socialnetwork',
-                'foreign_field' => 'profil',
+                'foreign_field' => 'profile',
                 'maxitems' => 9999,
                 'appearance' => [
                     'collapseAll' => 0,
@@ -288,12 +288,12 @@ return [
         ],
         'educations' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profil.educations',
+            'label' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_profile.educations',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_portfolioyjslt_domain_model_education',
-                'MM' => 'tx_portfolioyjslt_profil_education_mm',
+                'MM' => 'tx_portfolioyjslt_profile_education_mm',
                 'size' => 10,
                 'autoSizeMax' => 30,
                 'maxitems' => 9999,

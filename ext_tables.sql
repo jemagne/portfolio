@@ -6,7 +6,7 @@ CREATE TABLE tx_portfolioyjslt_domain_model_project (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 
-	profil int(11) unsigned DEFAULT '0' NOT NULL,
+	profile int(11) unsigned DEFAULT '0' NOT NULL,
 
 	title varchar(255) DEFAULT '' NOT NULL,
 	description text,
@@ -47,9 +47,9 @@ CREATE TABLE tx_portfolioyjslt_domain_model_project (
 );
 
 #
-# Table structure for table 'tx_portfolioyjslt_domain_model_profil'
+# Table structure for table 'tx_portfolioyjslt_domain_model_profile'
 #
-CREATE TABLE tx_portfolioyjslt_domain_model_profil (
+CREATE TABLE tx_portfolioyjslt_domain_model_profile (
 
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
@@ -153,7 +153,7 @@ CREATE TABLE tx_portfolioyjslt_domain_model_job (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 
-	profil int(11) unsigned DEFAULT '0' NOT NULL,
+	profile int(11) unsigned DEFAULT '0' NOT NULL,
 
 	position varchar(255) DEFAULT '' NOT NULL,
 	company_name varchar(255) DEFAULT '' NOT NULL,
@@ -286,7 +286,7 @@ CREATE TABLE tx_portfolioyjslt_domain_model_socialnetwork (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 
-	profil int(11) unsigned DEFAULT '0' NOT NULL,
+	profile int(11) unsigned DEFAULT '0' NOT NULL,
 
 	name int(11) DEFAULT '0' NOT NULL,
 	identity varchar(255) DEFAULT '' NOT NULL,
@@ -340,7 +340,7 @@ CREATE TABLE tx_portfolioyjslt_project_skill_mm (
 #
 CREATE TABLE tx_portfolioyjslt_domain_model_project (
 
-	profil int(11) unsigned DEFAULT '0' NOT NULL,
+	profile int(11) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -349,7 +349,7 @@ CREATE TABLE tx_portfolioyjslt_domain_model_project (
 #
 CREATE TABLE tx_portfolioyjslt_domain_model_job (
 
-	profil int(11) unsigned DEFAULT '0' NOT NULL,
+	profile int(11) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -358,14 +358,14 @@ CREATE TABLE tx_portfolioyjslt_domain_model_job (
 #
 CREATE TABLE tx_portfolioyjslt_domain_model_socialnetwork (
 
-	profil int(11) unsigned DEFAULT '0' NOT NULL,
+	profile int(11) unsigned DEFAULT '0' NOT NULL,
 
 );
 
 #
-# Table structure for table 'tx_portfolioyjslt_profil_education_mm'
+# Table structure for table 'tx_portfolioyjslt_profile_education_mm'
 #
-CREATE TABLE tx_portfolioyjslt_profil_education_mm (
+CREATE TABLE tx_portfolioyjslt_profile_education_mm (
 	uid_local int(11) unsigned DEFAULT '0' NOT NULL,
 	uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
 	sorting int(11) unsigned DEFAULT '0' NOT NULL,

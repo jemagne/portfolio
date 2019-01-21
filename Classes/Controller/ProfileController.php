@@ -17,17 +17,17 @@ namespace YJSLT\PortfolioYjslt\Controller;
  ***/
 
 /**
- * ProfilController
+ * ProfileController
  */
-class ProfilController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+class ProfileController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
     /**
-     * profilRepository
+     * profileRepository
      *
-     * @var \YJSLT\PortfolioYjslt\Domain\Repository\ProfilRepository
+     * @var \YJSLT\PortfolioYjslt\Domain\Repository\ProfileRepository
      * @inject
      */
-    protected $profilRepository = null;
+    protected $profileRepository = null;
 
     /**
      * action list
@@ -36,18 +36,18 @@ class ProfilController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
      */
     public function listAction()
     {
-        $profils = $this->profilRepository->findAll();
-        $this->view->assign('profils', $profils);
+        $profiles = $this->profileRepository->findAll();
+        $this->view->assign('profiles', $profiles);
     }
 
     /**
      * action show
      *
-     * @param \YJSLT\PortfolioYjslt\Domain\Model\Profil $profil
+     * @param \YJSLT\PortfolioYjslt\Domain\Model\Profile $profile
      * @return void
      */
-    public function showAction(\YJSLT\PortfolioYjslt\Domain\Model\Profil $profil)
+    public function showAction(\YJSLT\PortfolioYjslt\Domain\Model\Profile $profile)
     {
-        $this->view->assign('profil', $profil);
+        $this->view->assign('profile', $profile);
     }
 }

@@ -223,7 +223,7 @@ return [
             
         ],
     
-        'profil' => [
+        'profile' => [
             'config' => [
                 'type' => 'passthrough',
             ],

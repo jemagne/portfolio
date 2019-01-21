@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-15T10:28:04Z" product-name="portfolio_yjslt">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-21T15:25:20Z" product-name="portfolio_yjslt">
 		<header/>
 		<body>
 			<trans-unit id="tx_portfolioyjslt_domain_model_project">
@@ -27,43 +27,43 @@
 			<trans-unit id="tx_portfolioyjslt_domain_model_project.skills">
 				<source>Skills</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil">
-				<source>Profil</source>
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile">
+				<source>Profile</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.last_name">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.last_name">
 				<source>Last Name</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.first_name">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.first_name">
 				<source>First Name</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.birth_date">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.birth_date">
 				<source>Birth Date</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.driving_licence">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.driving_licence">
 				<source>Driving Licence</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.tel">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.tel">
 				<source>Tel</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.mail">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.mail">
 				<source>Mail</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.address">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.address">
 				<source>Address</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.photo">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.photo">
 				<source>Photo</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.projects">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.projects">
 				<source>Projects</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.jobs">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.jobs">
 				<source>Jobs</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.social">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.social">
 				<source>Social</source>
 			</trans-unit>
-			<trans-unit id="tx_portfolioyjslt_domain_model_profil.educations">
+			<trans-unit id="tx_portfolioyjslt_domain_model_profile.educations">
 				<source>Educations</source>
 			</trans-unit>
 			<trans-unit id="tx_portfolioyjslt_domain_model_education">

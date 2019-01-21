@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    656,
-                    12
+                    655,
+                    11
                 ]
             },
             "name": "New Model Object",
@@ -126,8 +126,8 @@
         {
             "config": {
                 "position": [
-                    944,
-                    12
+                    943,
+                    11
                 ]
             },
             "name": "New Model Object",
@@ -140,7 +140,7 @@
                     "_default4_delete": false,
                     "customActions": []
                 },
-                "name": "Profil",
+                "name": "Profile",
                 "objectsettings": {
                     "addDeletedField": true,
                     "addHiddenField": true,
@@ -300,8 +300,8 @@
         {
             "config": {
                 "position": [
-                    676,
-                    216
+                    675,
+                    215
                 ]
             },
             "name": "New Model Object",
@@ -562,8 +562,8 @@
         {
             "config": {
                 "position": [
-                    78,
-                    62
+                    77,
+                    61
                 ]
             },
             "name": "New Model Object",
@@ -637,8 +637,8 @@
         {
             "config": {
                 "position": [
-                    23,
-                    291
+                    22,
+                    290
                 ]
             },
             "name": "New Model Object",
@@ -700,8 +700,8 @@
         {
             "config": {
                 "position": [
-                    392,
-                    74
+                    391,
+                    73
                 ]
             },
             "name": "New Model Object",
@@ -778,8 +778,8 @@
         },
         "extensionKey": "portfolio_yjslt",
         "name": "PortfolioYJSLT",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "portfolio_yjslt",
+        "originalVendorName": "YJSLT",
         "persons": [
             {
                 "company": "",
@@ -945,8 +945,8 @@
         }
     ],
     "log": {
-        "last_modified": "2019-01-15 10:28",
+        "last_modified": "2019-01-21 03:25",
         "extension_builder_version": "8.10.2",
-        "be_user": " (1)"
+        "be_user": " (3)"
     }
 }

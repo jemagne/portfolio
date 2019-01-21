@@ -40,8 +40,8 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_portfolioyjslt_domain_model_project', 'EXT:portfolio_yjslt/Resources/Private/Language/locallang_csh_tx_portfolioyjslt_domain_model_project.xlf');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_portfolioyjslt_domain_model_project');
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_portfolioyjslt_domain_model_profil', 'EXT:portfolio_yjslt/Resources/Private/Language/locallang_csh_tx_portfolioyjslt_domain_model_profil.xlf');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_portfolioyjslt_domain_model_profil');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_portfolioyjslt_domain_model_profile', 'EXT:portfolio_yjslt/Resources/Private/Language/locallang_csh_tx_portfolioyjslt_domain_model_profile.xlf');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_portfolioyjslt_domain_model_profile');
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_portfolioyjslt_domain_model_education', 'EXT:portfolio_yjslt/Resources/Private/Language/locallang_csh_tx_portfolioyjslt_domain_model_education.xlf');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_portfolioyjslt_domain_model_education');

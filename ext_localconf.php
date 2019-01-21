@@ -26,7 +26,7 @@ call_user_func(
             // non-cacheable actions
             [
                 'Project' => '',
-                'Profil' => '',
+                'Profile' => '',
                 'Education' => '',
                 'Skill' => ''
             ]

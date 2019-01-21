@@ -19,7 +19,7 @@ namespace YJSLT\PortfolioYjslt\Domain\Repository;
 /**
  * The repository for Profils
  */
-class ProfilRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+class ProfileRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
     /**
      * @var array

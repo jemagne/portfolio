@@ -19,7 +19,7 @@ namespace YJSLT\PortfolioYjslt\Domain\Model;
 /**
  * profile
  */
-class Profil extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class Profile extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
      * lastName
