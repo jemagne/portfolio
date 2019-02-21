@@ -13,11 +13,35 @@
 	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 	<f:section name="content">
-		<h1>Single View for Profile</h1>
+		<div>
 
-		<f:flashMessages />
-		<f:render partial="Profile/Properties" arguments="{profile:profile}" />
+		</div>
+
+		<div class="jumbotron">
+		  <h1>Profil de {profile.firstName} {profile.lastName}</h1>
+			<div class="position-absolute">
+				<div>
+					<f:image image="{profile.photo}" treatIdAsReference="1" width="125" />
+				</div>
+				<div>
+					<p>Date de naissance : {profile.birthDate -> f:format.date()}</p>
+					<p>Permis de conduire :
+						<f:if condition="{profile.drivingLicence} == 1">
+							<f:then>
+								<span>Obtenu</span>
+							</f:then>
+							<f:else>
+								<span>Non obtenu</span>
+							</f:else>
+						</f:if>
+					</p>
+					<p>Numéro de téléphone : {profile.tel} </p>
+					<p>Adresse : {profile.address}</p>
+				</div>
+			</div>
+		</div>
+		<!-- <f:flashMessages /> -->
 		<f:link.action action="list">Back to list</f:link.action><br />
-		<f:link.action action="new">New Profile</f:link.action>
+		<!-- <f:link.action action="new">New Profile</f:link.action> -->
 	</f:section>
 </html>
