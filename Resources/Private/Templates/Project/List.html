@@ -30,17 +30,21 @@
 			</tr>
 
 			<f:for each="{projects}" as="project">
-				<tr>
-					<td><f:link.action action="show" arguments="{project : project}"> {project.title}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{project : project}"> {project.description}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{project : project}"> {project.photo.originalResource.name}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{project : project}"> {project.url}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{project : project}"> {project.dateStart -> f:format.date()}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{project : project}"> {project.dateEnd -> f:format.date()}</f:link.action></td>
-					<td><f:link.action action="edit" arguments="{project : project}">Edit</f:link.action></td>
-					<td><f:link.action action="delete" arguments="{project : project}">Delete</f:link.action></td>
-				</tr>
-			</f:for>
+			<tr>
+				<div class="panel panel-primary">
+					<div class="panel-body">
+						{project.title}
+					</div>
+					<div class="panel-footer">
+						<f:format.html>{project.description}</f:format.html>
+						<f:link.action action="show" arguments="{project : project}">
+							<p class="btn btn-primary btn-lg" role="button">En savoir plus</p>
+						</f:link.action>
+					</div>
+				</div>
+
+			</tr>
+		</f:for>
 		</table>
 
 		<f:link.action action="new">New Project</f:link.action>

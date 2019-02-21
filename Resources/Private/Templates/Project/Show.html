@@ -13,11 +13,43 @@
 	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 	<f:section name="content">
-		<h1>Single View for Project</h1>
+	<style media="screen">
+		img
+		{
+			width: 100%;
+		}
+	</style>
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="text-center">Détail du projet "{project.title}"</h1>
+			<f:image image="{project.photo}" />
+			<h3 class="mt-5">Description : </h3>
+			<p>
+				<f:format.html>{project.description}</f:format.html>
+			</p>
+			<div class="panel panel-danger">
+				<div class="panel-heading">Compétences</div>
+				<div class="panel-body">
 
-		<f:flashMessages />
-		<f:render partial="Project/Properties" arguments="{project:project}" />
-		<f:link.action action="list">Back to list</f:link.action><br />
-		<f:link.action action="new">New Project</f:link.action>
-	</f:section>
+					<f:for each="{project.skills}" as="skill">
+						<button class="button btn-primary">
+							{skill.tile}
+						</button>
+					</f:for>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<f:flashMessages />
+	<f:render partial="Project/Properties" arguments="{project:project}" />
+	<f:link.action action="list">Retour projets</f:link.action><br />
+	<f:link.action action="new">Nouveaux projets</f:link.action>
+</f:section>
 </html>
