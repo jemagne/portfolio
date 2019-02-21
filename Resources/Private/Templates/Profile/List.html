@@ -13,40 +13,28 @@
 	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 	<f:section name="content">
-		<h1>Listing for Profile</h1>
+		<h1>Liste des profils</h1>
 
 		<f:flashMessages />
 
-		<table  class="tx_portfolioyjslt" >
-			<tr>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.last_name" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.first_name" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.birth_date" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.driving_licence" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.tel" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.mail" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.address" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.photo" /></th>
-				<th> </th>
-				<th> </th>
-			</tr>
-
+		<row class="tx_portfolioyjslt">
 			<f:for each="{profiles}" as="profile">
-				<tr>
-					<td><f:link.action action="show" arguments="{profile : profile}"> {profile.lastName}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{profile : profile}"> {profile.firstName}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{profile : profile}"> {profile.birthDate -> f:format.date()}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{profile : profile}"> {profile.drivingLicence}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{profile : profile}"> {profile.tel}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{profile : profile}"> {profile.mail}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{profile : profile}"> {profile.address}</f:link.action></td>
-					<td><f:link.action action="show" arguments="{profile : profile}"> {profile.photo.originalResource.name}</f:link.action></td>
-					<td><f:link.action action="edit" arguments="{profile : profile}">Edit</f:link.action></td>
-					<td><f:link.action action="delete" arguments="{profile : profile}">Delete</f:link.action></td>
-				</tr>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<f:image image="{profile.photo}" treatIdAsReference="1" width="600px"/>
+						<div class="caption">
+						<h3><f:link.action action="show" arguments="{profile : profile}">{profile.firstName} {profile.lastName}</f:link.action></h3>
+						<p>
+							tel : {profile.tel} <br>
+							mail : {profile.mail}
+						</p>
+						</div>
+					</div>
+				</div>
 			</f:for>
-		</table>
+		</row>
+		
 
-		<f:link.action action="new">New Profile</f:link.action>
+		<!--<f:link.action action="new">New Profile</f:link.action>-->
 	</f:section>
 </html>

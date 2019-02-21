@@ -1,4 +1,5 @@
 <?php
+use YJSLT\PortfolioYjslt\Domain\Model\Education;
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:portfolio_yjslt/Resources/Private/Language/locallang_db.xlf:tx_portfolioyjslt_domain_model_education',
@@ -122,7 +123,9 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['-- Label --', 0],
+                    ['', 0],
+                    ['Développement WEB', Education::DOMAINE_WEB],
+                    ['Réseaux', 2],
                 ],
                 'size' => 1,
                 'maxitems' => 1,
@@ -199,7 +202,7 @@ return [
                 'rows' => 15,
                 'eval' => 'trim,required',
             ],
-            
+
         ],
         'skills' => [
             'exclude' => true,
@@ -225,8 +228,8 @@ return [
                     ],
                 ],
             ],
-            
+
         ],
-    
+
     ],
 ];

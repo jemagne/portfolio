@@ -21,6 +21,7 @@ namespace YJSLT\PortfolioYjslt\Domain\Model;
  */
 class Education extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
+  const DOMAINE_WEB = 1;
     /**
      * Domaine
      *
