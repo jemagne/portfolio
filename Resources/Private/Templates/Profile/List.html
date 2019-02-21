@@ -17,20 +17,6 @@
 
 		<f:flashMessages />
 
-		<table  class="tx_portfolioyjslt" >
-			<tr>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.last_name" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.first_name" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.birth_date" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.driving_licence" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.tel" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.mail" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.address" /></th>
-				<th><f:translate key="tx_portfolioyjslt_domain_model_profile.photo" /></th>
-				<th> </th>
-				<th> </th>
-			</tr>
-
 			<f:for each="{profiles}" as="profile">
 				<tr>
 					<td><f:link.action action="show" arguments="{profile : profile}"> {profile.lastName}</f:link.action></td>
